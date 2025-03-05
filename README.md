@@ -76,8 +76,11 @@ DELETE  /api/authors/{id}       - Delete author
 <h2>Example Requests:</h2>
 
 Create Book:
+
 POST /api/books
+
 Content-Type: application/json
+
 ```bash
 {
   "author": [{
@@ -94,8 +97,11 @@ Content-Type: application/json
 ```
 
 Create Author:
+
 POST /api/authors
+
 Content-Type: application/json
+
 ```bash
 {
   "biography": "Pioneer of cyberpunk literature"
