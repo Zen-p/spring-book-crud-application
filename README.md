@@ -113,15 +113,23 @@ Content-Type: application/json
 Environment Setup:
 
 **PostgreSQL Configuration:**
+
 Host:       localhost
+
 Port:       5432
-Database:   postgres
+
+Database:   spring_book_app
+
 User:       postgres
+
 Password:   postgres
 
 **pgAdmin Access:**
+
 URL:        http://localhost:5050
+
 Email:      admin@admin.com
+
 Password:   admin
 
 Tip: Use **Postman** or **curl** to test API endpoints after starting the application!
