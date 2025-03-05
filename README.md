@@ -44,6 +44,7 @@ Success! Application running at http://localhost:8085
 🔍 API Endpoints:
 
 **Books API:**
+
 GET     /api/books              - Get all books
 
 GET     /api/books/{id}         - Get book by ID
@@ -55,8 +56,9 @@ PATCH   /api/books/{id}         - Update book (partial update)
 DELETE  /api/books/{id}         - Delete book
 
 GET     /api/books/search?rat={num} - Search books by rating
-
+</br>
 ***Authors API:***
+
 GET     /api/authors            - Get all authors
 
 GET     /api/authors/{id}       - Get author by ID
