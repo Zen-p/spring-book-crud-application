@@ -1,8 +1,7 @@
-```
 📚 Spring Boot CRUD Application - Book & Author Management
 
-A RESTful API for managing books and authors built with Spring Boot and PostgreSQL.  
-Deployable via Docker with full CRUD operations and search capabilities.
+**A RESTful API for managing books and authors built with Spring Boot and PostgreSQL.  
+Deployable via Docker with full CRUD operations and search capabilities.**
 
 ---
 
@@ -19,17 +18,24 @@ Deployable via Docker with full CRUD operations and search capabilities.
 🚀 Getting Started:
 
 1. Clone Repository:
+```bash
 git clone https://github.com/Zen-p/spring-book-crud-application.git
 cd spring-book-crud-application
-
-2. Build Project:
+```
+3. Build Project:
+```bash
 mvn clean package
+```
 
-3. Start Database & pgAdmin:
+5. Start Database & pgAdmin:
+```bash
 docker-compose up -d
+```
 
-4. Run Application:
+7. Run Application:
+```bash
 java -jar target/spring-book-manager-1.0-SNAPSHOT.jar
+```
 
 Success! Application running at http://localhost:8080
 
@@ -37,7 +43,7 @@ Success! Application running at http://localhost:8080
 
 🔍 API Endpoints:
 
-📖 Books API:
+**Books API:**
 GET     /api/books              - Get all books
 GET     /api/books/{id}         - Get book by ID
 POST    /api/books              - Create new book
@@ -45,7 +51,7 @@ PATCH   /api/books/{id}         - Update book (partial update)
 DELETE  /api/books/{id}         - Delete book
 GET     /api/books/search?title={title} - Search books by title
 
-✍️ Authors API:
+***Authors API:***
 GET     /api/authors            - Get all authors
 GET     /api/authors/{id}       - Get author by ID
 POST    /api/authors            - Create new author
@@ -54,12 +60,12 @@ DELETE  /api/authors/{id}       - Delete author
 
 ---
 
-📄 Example Requests:
+<h2>Example Requests:</h2>
 
 Create Book:
 POST /api/books
 Content-Type: application/json
-
+```bash
 {
   "author": [{
     "biography": "Renowned sci-fi writer"
@@ -72,30 +78,31 @@ Content-Type: application/json
   "status": true,
   "rating": 5
 }
+```
 
 Create Author:
 POST /api/authors
 Content-Type: application/json
-
+```bash
 {
   "biography": "Pioneer of cyberpunk literature"
 }
+```
 
 ---
 
-⚙️ Environment Setup:
+Environment Setup:
 
-🐘 PostgreSQL Configuration:
+**PostgreSQL Configuration:**
 Host:       localhost
 Port:       5432
 Database:   postgres
 User:       postgres
 Password:   postgres
 
-📊 pgAdmin Access:
+**pgAdmin Access:**
 URL:        http://localhost:5050
 Email:      admin@admin.com
 Password:   admin
 
-Tip: Use Postman or curl to test API endpoints after starting the application!
-```
+Tip: Use **Postman** or **curl** to test API endpoints after starting the application!
