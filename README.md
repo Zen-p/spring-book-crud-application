@@ -56,7 +56,9 @@ PATCH   /api/books/{id}         - Update book (partial update)
 DELETE  /api/books/{id}         - Delete book
 
 GET     /api/books/search?rat={num} - Search books by rating
-</br>
+
+<br>
+
 ***Authors API:***
 
 GET     /api/authors            - Get all authors
