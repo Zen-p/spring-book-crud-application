@@ -45,17 +45,26 @@ Success! Application running at http://localhost:8085
 
 **Books API:**
 GET     /api/books              - Get all books
+
 GET     /api/books/{id}         - Get book by ID
+
 POST    /api/books              - Create new book
+
 PATCH   /api/books/{id}         - Update book (partial update)
+
 DELETE  /api/books/{id}         - Delete book
-GET     /api/books/search?title={title} - Search books by title
+
+GET     /api/books/search?rat={num} - Search books by rating
 
 ***Authors API:***
 GET     /api/authors            - Get all authors
+
 GET     /api/authors/{id}       - Get author by ID
+
 POST    /api/authors            - Create new author
+
 PATCH   /api/authors/{id}       - Update author (partial update)
+
 DELETE  /api/authors/{id}       - Delete author
 
 ---
