@@ -1,90 +1,101 @@
-# Spring Boot CRUD Application
+```
+📚 Spring Boot CRUD Application - Book & Author Management
 
-REST API for managing books and authors using Spring Boot and PostgreSQL.
+A RESTful API for managing books and authors built with Spring Boot and PostgreSQL.  
+Deployable via Docker with full CRUD operations and search capabilities.
 
-## Technologies
-- Java 17
-- Spring Boot
+---
+
+🛠 Technologies:
+- Java 17 
+- Spring Boot 3 
 - PostgreSQL
-- Hibernate/JPA
+- Hibernate/JPA 
 - Docker
 - Maven
 
-1. Clone the repository:
-```bash
+---
+
+🚀 Getting Started:
+
+1. Clone Repository:
 git clone https://github.com/Zen-p/spring-book-crud-application.git
 cd spring-book-crud-application
-```
 
-2. Build the project:
-```bash
+2. Build Project:
 mvn clean package
-```
 
-3. Start database:
-```bash
+3. Start Database & pgAdmin:
 docker-compose up -d
-```
 
-4. Run application
-```bash
+4. Run Application:
 java -jar target/spring-book-manager-1.0-SNAPSHOT.jar
-```
 
-**Done! The application is running.**
+Success! Application running at http://localhost:8080
 
+---
 
-API Endpoints
+🔍 API Endpoints:
 
-Books
-Method	Endpoint	Description
-GET	/api/books	Get all books
-GET	/api/books/{id}	Get book by ID
-POST	/api/books	Create a new book
-PATCH	/api/books/{id}	Update a book
-DELETE	/api/books/{id}	Delete a book
-GET	/api/books/search?title={title}	Search books by title
+📖 Books API:
+GET     /api/books              - Get all books
+GET     /api/books/{id}         - Get book by ID
+POST    /api/books              - Create new book
+PATCH   /api/books/{id}         - Update book (partial update)
+DELETE  /api/books/{id}         - Delete book
+GET     /api/books/search?title={title} - Search books by title
 
+✍️ Authors API:
+GET     /api/authors            - Get all authors
+GET     /api/authors/{id}       - Get author by ID
+POST    /api/authors            - Create new author
+PATCH   /api/authors/{id}       - Update author (partial update)
+DELETE  /api/authors/{id}       - Delete author
 
-Authors
-Method	Endpoint	Description
-GET	/api/authors	Get all authors
-GET	/api/authors/{id}	Get author by ID
-POST	/api/authors	Create a new author
-PATCH	/api/authors/{id}	Update an author
-DELETE	/api/authors/{id}	Delete an author
+---
 
+📄 Example Requests:
 
-Example Requests
-
-**Create a Book**
-```
+Create Book:
 POST /api/books
 Content-Type: application/json
+
 {
-  "author": [
-    {
-      "biography": "Author's biography"
-    }
-  ],
+  "author": [{
+    "biography": "Renowned sci-fi writer"
+  }],
   "genre": {
     "name": "Science Fiction"
   },
   "yearOfPublication": 2023,
-  "description": "Book description",
+  "description": "Epic space adventure",
   "status": true,
   "rating": 5
 }
-```
 
-Create an Author
-```
+Create Author:
 POST /api/authors
 Content-Type: application/json
 
 {
-  "biography": "Science fiction author"
+  "biography": "Pioneer of cyberpunk literature"
 }
+
+---
+
+⚙️ Environment Setup:
+
+🐘 PostgreSQL Configuration:
+Host:       localhost
+Port:       5432
+Database:   postgres
+User:       postgres
+Password:   postgres
+
+📊 pgAdmin Access:
+URL:        http://localhost:5050
+Email:      admin@admin.com
+Password:   admin
+
+Tip: Use Postman or curl to test API endpoints after starting the application!
 ```
-
-
