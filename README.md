@@ -37,7 +37,7 @@ docker-compose up -d
 java -jar target/spring-book-manager-1.0-SNAPSHOT.jar
 ```
 
-Success! Application running at http://localhost:8080
+Success! Application running at http://localhost:8085
 
 ---
 
