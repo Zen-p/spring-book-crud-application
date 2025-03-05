@@ -22,17 +22,17 @@ Deployable via Docker with full CRUD operations and search capabilities.**
 git clone https://github.com/Zen-p/spring-book-crud-application.git
 cd spring-book-crud-application
 ```
-3. Build Project:
+2. Build Project:
 ```bash
 mvn clean package
 ```
 
-5. Start Database & pgAdmin:
+3. Start Database & pgAdmin:
 ```bash
 docker-compose up -d
 ```
 
-7. Run Application:
+4. Run Application:
 ```bash
 java -jar target/spring-book-manager-1.0-SNAPSHOT.jar
 ```
